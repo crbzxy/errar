@@ -4,10 +4,7 @@ function Errar() {
   return (
     <div className="Errar">
       <>
-        <a-scene
-          background="color: #ECECEC"
-         
-        >
+        <a-scene background="color: #ECECEC">
           <a-box
             position="-1 0.5 -3"
             rotation="0 45 0"
@@ -43,9 +40,7 @@ function Errar() {
             material=""
             geometry=""
           />
-          <div className="a-loader-title">
-            Hello, World! • A-Frame
-          </div>
+          <div className="a-loader-title">Hello, World! • A-Frame</div>
         </a-scene>
       </>
     </div>
