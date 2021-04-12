@@ -1,46 +1,102 @@
+import MaterialBola from "../img/material.jpg";
+import Cielo from "../img/sky.jpeg";
+import prevportal from "../img/Prevportal.png";
+import Fondo from "../img/fondo.png";
+
 require("aframe");
+require("aframe-liquid-portal-shader");
 
 function Errar() {
   return (
     <div className="Errar">
       <>
         <a-scene background="color: #ECECEC">
-          <a-box
-            position="-1 0.5 -3"
-            rotation="0 45 0"
-            color="#4CC3D9"
-            shadow=""
-            material=""
-            geometry=""
+          <a-assets>
+            <img id="sky" src={Cielo} alt="cielo"  />
+            <img id="my-texture" src={MaterialBola} alt="material" />
+            <img id="fondo" src={Fondo} alt="fondo" />
+            <img
+                id="demo"
+                alt="hola"
+                src={prevportal}
+                crossorigin="anonymous"
+                
+              />
+          </a-assets>
+          <a-camera position="0 2.8 1" rotation="26 50 0" />
+          <a-sky src="#sky" rotation=" 0 260  0" opacity="0.9"></a-sky>
+         
+          <a-torus-knot
+           scale="0.26 0.26 0.26"
+            arc="360"
+            p="1"
+            q="16"
+            radius="2"
+            radius-tubular="0.1"
+            position="0 3.44 -4.86395"
+          wireframe="true"
+          opacity="0.1"
+          
+          animation="property: rotation; to: 0 0 360 ; dur: 20000; easing: linear; loop: NaN"
+            
           />
+            
+            <a-image
+                src="#demo"
+                material="shader: liquid-portal"
+                scale="0.5 0.5"
+                position="-1.3 2.49 -4.1"
+              />
+          
+          <a-entity
+            light="type:directional; castShadow:true;"
+            position="0 8 14"
+            intensity="0.5"
+          />
+          <a-entity
+            light="type:directional; castShadow:true;"
+            position="-2 8 -9"
+            intensity="0.5"
+          />
+          <a-entity
+            light="type:penumbra; castShadow:false;"
+            decay=" 1"
+            position="0 3.14 -4.55"
+            intensity="0.1"
+          />
+          <a-entity
+            light="type: point; intensity: 0.47"
+            decay=" 1"
+            position="0 3.14 -4.16395"
+            intensity="1"
+          />
+          <a-box src="#fondo" position="0 3.49 -5" scale="5 7 6" depth="0.02" />
           <a-sphere
-            position="0 1.25 -5"
-            radius="1.25"
-            color="#EF2D5E"
-            shadow=""
-            material=""
-            geometry=""
+            position="0.89 0.49 -4.26"
+            radius="0.3"
+            material="src: #my-texture"
+            shadow="receive: true"
+            opacity="0.88"
           />
-          <a-cylinder
-            position="1 0.75 -3"
-            radius="0.5"
-            height="1.5"
-            color="#FFC65D"
-            shadow=""
-            material=""
-            geometry=""
+          <a-box
+            position="1 0.2 -4"
+            rotation="-90 -45 0  "
+            width="1.5"
+            height="1"
+            depth="0.02"
+            color="#fcfcfc"
+            shadow="receive: true"
           />
+
           <a-plane
-            position="0 0 -4"
+            position="-6 0 -4"
             rotation="-90 0 0"
-            width="4"
-            height="4"
+            width="140"
+            height="140"
             color="#7BC8A4"
-            shadow=""
-            material=""
-            geometry=""
+            shadow="receive: true"
+            opacity="0.3"
           />
-          <div className="a-loader-title">Hello, World! • A-Frame</div>
         </a-scene>
       </>
     </div>
