@@ -12,42 +12,28 @@ function Errar() {
       <>
         <a-scene background="color: #ECECEC">
           <a-assets>
-            <img id="sky" src={Cielo} alt="cielo"  />
+            <img id="sky" src={Cielo} alt="cielo" />
             <img id="my-texture" src={MaterialBola} alt="material" />
             <img id="fondo" src={Fondo} alt="fondo" />
             <img
-                id="demo"
-                alt="hola"
-                src={prevportal}
-                crossorigin="anonymous"
-                
-              />
+              id="demo"
+              alt="hola"
+              src={prevportal}
+              crossorigin="anonymous"
+            />
           </a-assets>
           <a-camera position="0 2.8 1" rotation="26 50 0" />
           <a-sky src="#sky" rotation=" 0 260  0" opacity="0.9"></a-sky>
-         
-          <a-torus-knot
-           scale="0.26 0.26 0.26"
-            arc="360"
-            p="1"
-            q="16"
-            radius="2"
-            radius-tubular="0.1"
-            position="0 3.44 -4.86395"
-          wireframe="true"
-          opacity="0.1"
-          
-          animation="property: rotation; to: 0 0 360 ; dur: 20000; easing: linear; loop: NaN"
-            
+
+        
+
+          <a-image
+            src="#demo"
+            material="shader: liquid-portal"
+            scale="0.5 0.5"
+            position="-1.3 2.49 -4.1"
           />
-            
-            <a-image
-                src="#demo"
-                material="shader: liquid-portal"
-                scale="0.5 0.5"
-                position="-1.3 2.49 -4.1"
-              />
-          
+
           <a-entity
             light="type:directional; castShadow:true;"
             position="0 8 14"
