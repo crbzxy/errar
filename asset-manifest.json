@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/errar/static/js/main.eacc7156.chunk.js",
-    "main.js.map": "/errar/static/js/main.eacc7156.chunk.js.map",
+    "main.js": "/errar/static/js/main.a2f4e1b5.chunk.js",
+    "main.js.map": "/errar/static/js/main.a2f4e1b5.chunk.js.map",
     "runtime-main.js": "/errar/static/js/runtime-main.8ddb2a39.js",
     "runtime-main.js.map": "/errar/static/js/runtime-main.8ddb2a39.js.map",
     "static/js/2.9f21226e.chunk.js": "/errar/static/js/2.9f21226e.chunk.js",
@@ -11,13 +11,13 @@
     "index.html": "/errar/index.html",
     "static/js/2.9f21226e.chunk.js.LICENSE.txt": "/errar/static/js/2.9f21226e.chunk.js.LICENSE.txt",
     "static/media/Prevportal.5b7ef64f.png": "/errar/static/media/Prevportal.5b7ef64f.png",
-    "static/media/fondo.d95fee22.png": "/errar/static/media/fondo.d95fee22.png",
+    "static/media/fondo.395cb780.png": "/errar/static/media/fondo.395cb780.png",
     "static/media/material.426bf3f0.jpg": "/errar/static/media/material.426bf3f0.jpg",
     "static/media/sky.2dcf0e2d.jpeg": "/errar/static/media/sky.2dcf0e2d.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.8ddb2a39.js",
     "static/js/2.9f21226e.chunk.js",
-    "static/js/main.eacc7156.chunk.js"
+    "static/js/main.a2f4e1b5.chunk.js"
   ]
 }
